@@ -1,7 +1,7 @@
 package com.miranda.desing_patterns.strategy.service;
 
 import com.miranda.desing_patterns.strategy.tax_strategy.InterestStrategy;
-import com.miranda.desing_patterns.strategy.tax_strategy.InterestType;
+import com.miranda.desing_patterns.enums.InterestType;
 import com.miranda.desing_patterns.strategy.tax_strategy.SelicInterestStrategy;
 import com.miranda.desing_patterns.strategy.tax_strategy.ZeroInterestStrategy;
 import org.springframework.stereotype.Service;

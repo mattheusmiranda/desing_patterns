@@ -1,7 +1,8 @@
-package com.miranda.desing_patterns.strategy.controller;
+package com.miranda.desing_patterns.factory.controller;
 
-import com.miranda.desing_patterns.strategy.service.InterestCalculatorService;
 import com.miranda.desing_patterns.enums.InterestType;
+import com.miranda.desing_patterns.factory.response.InterestResponse;
+import com.miranda.desing_patterns.factory.service.InterestCalculatorService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,7 +16,7 @@ public class InterestController {
     }
 
     @GetMapping("/calculate")
-    public double calculate(
+    public InterestResponse calculate(
             @RequestParam InterestType type,
             @RequestParam double amount
     ) {
